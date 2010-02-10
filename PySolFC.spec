@@ -10,6 +10,8 @@ Source0:	http://downloads.sourceforge.net/pysolfc/%{name}-%{version}.tar.bz2
 Source1:	PySol.desktop
 Patch0:		pysolfc-setup.py-noglade.patch
 BuildRequires:	python-devel
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-PIL-tk
 Requires:	python-modules
