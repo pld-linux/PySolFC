@@ -47,9 +47,6 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 cp -a %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
-# duplicate with ru
-rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/ru_RU
-
 # sanitize
 mv $RPM_BUILD_ROOT%{_bindir}/pysol{.py,}
 
