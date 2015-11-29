@@ -12,7 +12,7 @@ Patch0:		pysolfc-setup.py-noglade.patch
 BuildRequires:	python-devel
 BuildRequires:	python-modules
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	python-PIL-tk
 Requires:	python-modules
 Requires:	python-tkinter
