@@ -3,7 +3,7 @@
 Summary:	A collection of solitare card games
 Name:		PySolFC
 Version:	2.20.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/Games
 URL:		http://pysolfc.sourceforge.net/
@@ -23,7 +23,9 @@ Requires:	tcl
 Requires:	tix
 Requires:	tk
 Provides:	pysol = %{version}-%{release}
+Provides:	pysol-sound-server = %{version}-%{release}
 Obsoletes:	pysol < 5
+Obsoletes:	pysol-sound-server < 5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
