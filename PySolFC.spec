@@ -3,7 +3,7 @@
 Summary:	A collection of solitare card games
 Name:		PySolFC
 Version:	2.20.1
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Applications/Games
 URL:		http://pysolfc.sourceforge.net/
@@ -50,6 +50,9 @@ rm -rf $RPM_BUILD_ROOT
 %py3_install
 
 cp -a PySolFC-Cardsets--Minimal-%{cardsets_minimal_ver}/cardset-* $RPM_BUILD_ROOT%{_datadir}/PySolFC
+
+# Not used in installed code
+%{__sed} -i '/pycotap/d' $RPM_BUILD_ROOT%{py3_sitescriptdir}/PySolFC-*.egg-info/requires.txt
 
 %find_lang pysol
 
