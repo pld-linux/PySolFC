@@ -1,11 +1,11 @@
 --- setup.py.orig	2007-09-29 16:41:41.000000000 -0400
 +++ setup.py	2007-09-29 16:41:49.000000000 -0400
 @@ -44,7 +44,7 @@
-     for l in ('ru', 'ru_RU'):
-         data_files.append(('share/locale/%s/LC_MESSAGES' % l,
-                            ['locale/%s/LC_MESSAGES/pysol.mo' % l]))
+     for size in os.listdir('data/images/icons'):
+         data_files.append(('share/icons/hicolor/%s/apps' % size,
+                            ['data/images/icons/%s/pysol.png' % size]))
 -    data_files.append((data_dir, ['data/pysolfc.glade']))
 +    #data_files.append((data_dir, ['data/pysolfc.glade']))
+     data_files.append(('share/applications', ['data/pysol.desktop']))
  
- ##from pprint import pprint; pprint(data_files)
- ##import sys; sys.exit()
+ # from pprint import pprint; pprint(data_files)
