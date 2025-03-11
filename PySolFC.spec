@@ -3,7 +3,7 @@
 Summary:	A collection of solitare card games
 Name:		PySolFC
 Version:	2.20.1
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		Applications/Games
 URL:		http://pysolfc.sourceforge.net/
