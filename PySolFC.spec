@@ -39,7 +39,7 @@ plug-ins, an integrated HTML help browser, and lots of documentation.
 
 %prep
 %setup -q -a1
-%patch0 -p0
+%patch -P 0 -p0
 
 %build
 %py3_build
